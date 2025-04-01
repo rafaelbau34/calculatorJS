@@ -10,7 +10,7 @@
     <div id="calculator">
       <input id="display" readonly />
       <div id="keys">
-        <button class="top">DEL</button>
+        <button class="top" onclick="del()">DEL</button>
         <button class="top" onclick="clearr()">AC</button>
         <button class="top" onclick="appendToDisplay('%')">%</button>
         <button onclick="appendToDisplay('/')" class="different" onclick="">
@@ -35,8 +35,8 @@
           +
         </button>
         <button class="zero" onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('.')">.</button>
-        <button class="different">=</button>
+        <button onclick="appendToDisplay('.');">.</button>
+        <button onclick="calculate()" class="different">=</button>
       </div>
     </div>
   </body>
